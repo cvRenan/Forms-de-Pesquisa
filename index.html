@@ -1,18 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa de Satisfação</title>
+        <title>Pesquisa de Satisfação</title>
 </head>
+
 <body>
     <header>
-        <h1>
-            Pesquisa de Satisfação UPNewTec
-        </h1>
+        <h1>Pesquisa de Satisfação para UPNewTec<h1>
     </header>
     <section>
-        <form action="" method="get"></form>
+        <fieldset>
+            <legend>Formúlario Pessoal para a Pesquisa de Satisfação</legend>
+            <form action="" method="get">
+                <label for="userName">Nome completo:</label>
+                <input type="text" name="userName" placeholder="Nome completo" required>
+                <br>
+                <label for="Age">Idade:</label>
+                <input type="number" name="Age" min="12" ; max="99" placeholder="Mínimo 12 anos e máximo 99">
+                <br>
+                <label for="userBirthDate">Data de nascimento:<label>
+                        <input type="date" name="userBirthDate">
+                        <br>
+                        <label for="userEmail">E-mail</label>
+                        <input type="email" name="userEmail" required>
+                        <br>
+                        <label for="userPhoneNumber">Telefone:</label>
+                        <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
+                            placeholder="DDD+Número Somente números">
+                        <br>
+                        <label for="userImage">Foto de perfil:</label>
+                        <input type="file" name="userImage" accept="image/*">
+        </fieldset>
+        <fieldset>
+            <form action="" method="get">
+                <legend>Dados de Perfil</legend>
+                <input type="radio" name="genderUser">
+                <label for="Masculino">Masculino</label>
+
+                <input type="radio" name="genderUser">
+                <label for="Feminino">Feminino</label>
+
+                <input type="radio" name="genderUser">
+                <label for="notInformed">Prefiro não informar</label>
+                <br>
+                <label for="maritalStatus">Estado civil:</label>
+                <select name="maritalStatus">
+                    <option value="notInformed"> </option>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Casado">União estável</option>
+                </select>
+                <label for="userState">Estado de nascimento:</label>
+                <select name="userState" required>
+                    <option value="    "> </option>
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="distrito-federal">Distrito Federal</option>
+                    <option value="espirito-santo">Espírito Santo</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="mato-grosso">Mato Grosso</option>
+                    <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
+                    <option value="minas-gerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="piaui">Piauí</option>
+                    <option value="rio-de-janeiro">Rio de Janeiro</option>
+                    <option value="rio-grande-do-norte">Rio Grande do Norte</option>
+                    <option value="rio-grande-do-sul">Rio Grande do Sul</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santa-catarina">Santa Catarina</option>
+                    <option value="sao-paulo">São Paulo</option>
+                    <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>
+                </select>
+                <label for="userCity">Cidade:</label>
+                <input type="text" id="userCity" name="userCity" autocomplete="address-level2"
+                    placeholder="Ex.: Fortaleza" />
+            </form>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
     </section>
+    </form>
+
 </body>
+
 </html>
